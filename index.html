@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132255123-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-132255123-1');
+    </script>
+
+    <title>Portfolio | Joel D Souza - Web App Developer</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Joel DSouza, Web Developer. I build web apps, using React, Redux, Vue and PHP. Want to know more about me? Visit me here and explore the projects I have built.">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media and Joel DSouza">    
+    <meta name="keywords" content="developer, fullstack developer, joel dsouza portfolio, joel dsouza developer, web developer, portfolio, joel dsouza, portfolio examples, joel dsouza linkedin" />
+    <link rel="shortcut icon" href="favicon.jpg">  
+    <link rel="canonical" href="https://joeldsouza.me/" />
+    <style>
+        .green-txt{
+            color:#3aaa81;
+        }
+        .paper-bg{
+            background: #F44336;
+            padding: 5px;
+            display: inline-block;
+            border-radius: 8px 6px 15px 7px;
+            color: #fff !important;
+            font-size: 20px;
+            box-shadow: 6px 4px 17px -2px #F44336;
+        }
+
+        .item.row{
+            border-bottom:1px solid #eee;
+            padding:10px;
+        }
+        .project-image{
+            background-image: url("assets/images/placeholder.gif")
+        }
+        .job-title {
+            -webkit-animation: flicker 2s infinite;
+            text-align:center;
+            margin-top:3em;
+            font-family:'Lato', sans-serif;
+            font-size:3em;
+        }
+
+        @-webkit-keyframes flicker
+        {
+            0% {opacity:0;}
+            9% {opacity:0;}
+            10% {opacity:.5;}
+            13% {opacity:0;}
+            20% {opacity:.5;}
+            25% {opacity:1;}
+        }
+    </style>
+</head> 
+
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container clearfix">                       
+            <img class="profile-image img-fluid float-left" title="Joel Dsouza" src="assets/images/profile.png" alt="Joel DSouza" />
+            <div class="profile-content float-left">
+                <h1 class="name">Joel D Souza</h1>
+                <h2 class="desc job-title paper-bg" style="font-size: 20px;">Web App Developer</h2>   
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/joeljeevandsouza/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/7181668/reflexgravity" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>   
+                    <li class="list-inline-item"><a href="https://github.com/Reflex-Gravity" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/joeldsouza10" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/jo3l.dsouza/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item last-item"><a href="https://www.facebook.com/joeljeevandsouza" target="_blank"><i class="fab fa-facebook-f"></i></a></li>                
+                    <li class="list-inline-item last-item"><a href="https://open.spotify.com/user/reflexgravity?si=bD4NAioGTvWXF-2gFimazw" target="_blank"><i class="fab fa-spotify"></i></a></li>                
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary float-right" href="https://drive.google.com/open?id=1qUjGBlCdp2_yjtuKeeAr1uDhsCDuf0-M" norefferer target="_blank"><i class="fas fa-eye"></i> View Resume</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">A little about me</h2>
+                        <div class="content">
+                            <p style="font-size:20px">
+                                Hello, I'm <b class="green-txt">a Web Developer</b> specialized in React, Redux and PHP. I've always been passionate about technology. I have 
+                                <b><span id="exp_year"></span>+</b>  years of development experience building products from scratch, developing and integrating APIs. I love building minimal and intuitive UI that offers users an enjoyable experience.
+                            </p>
+                            <p style="font-size:20px">
+                                I also explore and try new technologies.
+                            </p>
+                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="https://www.adjetter.com/ni/" target="_blank">Kapture CRM</a></h3>
+                                <p class="summary">Saas CRM Software</p>
+                                <div class="featured-image has-ribbon">
+                                    <a href="" target="_blank">
+                                    <img class="img-fluid project-image kapture-img" src="" alt="Kapture CRM" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">New</div>
+                                    </div>
+                                </div>
+                                    
+                                <div class="desc text-left">                                    
+                                    <p>It's a SaaS CRM for business. I designed and developed the frontend architecture. Built UI components and integrated them with RESTful APIs. With the new UI, the customer work efficiency was improved my 30%. I also developed the frontend for the real-time XMPP based chat application using Strophe. I also built various modules like ticketing, orders, dispose and chat in the CRM.</p>
+                                </div><!--//desc-->         
+                                             
+                            </div><!--//item-->
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="https://app.bahamasparadisecruise.com" target="_blank">Bahamas Paradise Cruise Line</a></h3>
+                                <p class="summary">New Cruise Booking Engine</p>
+                                <div class="featured-image has-ribbon">
+                                    <a href="https://app.bahamasparadisecruise.com" target="_blank">
+                                        <img class="img-fluid project-image be-img" src="" alt="BPCL booking engine" />
+                                    </a>
+                                </div>
+                                    
+                                <div class="desc text-left">                                    
+                                    <p>This project is a PWA (Progressive Web App) and is built using ReactJS, Redux and Laravel. The backend is integrated with APIs. This booking engine is built for BPCL customers to improve their booking experience better. The engine has a calendar showing date-wise pricing. The users can select single and multiple stateroom combinations. Promo and package application features are also introduced in the engine. The online bookings were increased by 35% after the revamped UI.</p>
+                                </div><!--//desc-->         
+                                <a class="btn btn-cta-secondary" href="https://app.bahamasparadisecruise.com" target="_blank"><i class="fas fa-eye"></i> View my project</a>                 
+                            </div><!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="http://beta.bahamasair.com" target="_blank">
+                                <img class="img-fluid project-image bair-img" src="" alt="Bahamas Air" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="http://beta.bahamasair.com" target="_blank">Bahamas Air - New website</a></h3>
+                                    <p class="mb-2">This a website for Bahamas Airliner, Bahamas Air. The website is Single Page App. This website was built using Vue 2 and Vuex. The website also includes a <b>Booking widget</b> which is integrated to an external API.</p>
+                                    <p><a class="more-link" href="http://beta.bahamasair.com" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://www.bahamasparadisecruise.com/" target="_blank">
+                                <img class="img-fluid project-image bpcl-img" src="" alt="BPCL new website" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://www.bahamasparadisecruise.com/" target="_blank">Bahamas Paradise Cruise Line - New Website</a></h3>
+                                    <p class="mb-2">It's a website for a US cruise liner, Bahamas Paradise Cruise Line. I developed mobile-first and responsive UI components.</p>
+                                    <p><a class="more-link" href="https://www.bahamasparadisecruise.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#" target="_blank">
+                                <img class="img-fluid project-image hansa-img" src="" alt="Hansa Flex Android App" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">HansaFlex - Android app</h3>
+                                    <p class="mb-2">It's a real-time location tracker for Hansa Flex. The app has two users, the agent and an admin. This admin can allocate and manage tasks, also track the agents. The agents can update the task once completed. The app needs root access and is pre-installed to the agents phone.</p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Web Developer - <span class="place"><a href="https://www.kapturecrm.com">Kapture CRM</a></span> <span class="year">(Jan 2018 - Present)</span></h3>
+                                <p>
+                                    Learning a lot here. I have designed and built dynamic, scalable, data-driven and performance focused web-apps. I also became responsible for hiring developers and mentoring them. I lead a small team of 3 developers. I also setup and manage web servers, EC 2 Instance. I also configured Git and Bitbucket CI/CD. 
+                                </p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Full-Stack Developer - <span class="place">Wrofient Studios Pvt. Ltd.</span> <span class="year">(May 2017 - Jan 2018)</span></h3>
+                                <p>
+                                    Built Android apps, PHP based websites. Built e-commerce websites using Core PHP. I also developed WordPress based websites here.
+                                </p>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">Freelance Web Developer - <span class="place">Fiverr</span> <span class="year">(2017 - 2019)</span></h3>
+                                <p>
+                                    Built web apps and fix multiple issues faced by clients in websites, servers and Apps. I have integrated Firebase into websites. Improved SEO for static websites.
+                                </p>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <section class="github section">
+                    <div class="section-inner">
+                        <h2 class="heading">My GitHub</h2>
+                        <div id="ghfeed" class="ghfeed">
+                        </div><!--//ghfeed-->
+                        
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Bengaluru, IN</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:joeljeevan10@gmail.com">joeljeevan10@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                                Frontend in ReactJS and VueJS with ability to implement complex website logic.
+                            </p>
+                            
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">FrontEnd - React, VueJS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Javascript expert ES5, ES6, ES7"><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="96%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">State - Redux, Vuex<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Efficient data management for dynamic and complex websites"><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="94%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3 &amp; Sass<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="CSS3 animations, keyframes. SCSS variables, loops etc."><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="98%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">PHP - Laravel, Wordpress<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="PHP with OOPS and Laravel with Models, Routing"></i>Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Java - Android<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Android with Gmaps API, OOPS, animations"></i>Beginner</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="50%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Tools - Webpack, Grunt, Bash<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Android with Gmaps API, OOPS, animations"></i>Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="80%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Db - MySQL, Firebase<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Firebase and MySql working knowledge."></i>Intermediate</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="70%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">IDE - VS Code, Android Studio<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="MySQL with all concepts"></i>Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Server - Nginx, Apache, AWS EC2, Google Cloud<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="MySQL with all concepts"></i>Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="87%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                <aside class="testimonials aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Testimonials</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">                                  
+                                    <p><i class="fas fa-quote-left"></i>Joel is an excellent developer and he is passionate and crazy about what he does. He puts his 100% when he's developing something.</p>
+                                </blockquote>                
+                                <p class="source"><span class="name">Swathi R</span><br /><span class="title">HR Recruiter</span></p>                                                             
+                            </div><!--//item-->
+                            
+                            <p><a class="more-link" href="https://www.linkedin.com/in/swathi-naik-7a26b7153/"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> 
+                            
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BCA</h3>
+                                <h4 class="university">St. Aloysius College, Mangalore <span class="year">(2014-2017)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Senior Secondary (Commerce)</h3>
+                                <h4 class="university">Kendriya Vidyalaya II, Kasaragod.<span class="year">(2012-2014)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>Konkani:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i><i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Hindi:</strong></span>
+                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Malayalam:</strong></span>
+                                    <span class="level">Speak <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Kannada:</strong></span>
+                                    <span class="level">Speak, Read and Write<br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Tulu:</strong></span>
+                                    <span class="level">Speak <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i><i class="fas fa-star-half"></i></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="list music aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Favourite coding artists</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-headphones"></i> <a href="#">Eric Priydz</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="#">Linkin Park</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="#">Owl City</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="#">Foster the People</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->        
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out our commercial license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script>
+        let tot_year=0;
+        let start_year=2017;
+        tot_year=new Date().getFullYear()-start_year;
+        document.getElementById("exp_year").innerHTML=tot_year;
+    </script>
+
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script defer type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script defer type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    // <script async type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script async type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script async type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script async type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <!-- custom js -->
+    <script async type="text/javascript" src="assets/js/main.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github acitivity css -->    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <script async>
+        $(function(){
+
+            $(".bair-img").attr("src","assets/images/bair.png");
+            $(".bpcl-img").attr("src","assets/images/bpcl.jpg");
+            $(".hansa-img").attr("src","assets/images/hansa.jpg");
+            $(".be-img").attr("src","assets/images/be.jpg");
+            $(".kapture-img").attr("src","assets/images/kapture_chat_dispose.png");
+        })
+        var myTime = window.performance.now();
+        
+    </script>
+</body>
+</html> 
+
